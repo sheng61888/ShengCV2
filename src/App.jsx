@@ -25,22 +25,22 @@ const App = () => {
       >
         {`{ x: ${mousePos.x}, y: ${mousePos.y} }`}
         <br />
-        {`[ AI_STUDENT ]`}
+        {`[ HOLA AMIGO ]`}
       </div>
 
-      {/* Hero Content */}
+      {/* Hero*/}
       <nav className="p-8 flex justify-between items-center font-mono text-sm tracking-widest">
         <span>SAM KIAN SHENG</span>
-        <div className="space-x-8">
+        <div className="space-x-10">
           <a href="#projects" className="hover:line-through">WORK</a>
           <a href="#about" className="hover:line-through">ABOUT</a>
         </div>
       </nav>
 
       <main className="flex flex-col justify-center px-8 mt-32 max-w-5xl">
-        <h1 className="text-7xl md:text-8xl font-light tracking-tighter mb-8">
+        <h1 className="text-8xl font-light tracking-tighter mb-10 leading-none">
           Computer Science Student<br /> 
-          <span className="italic font-serif opacity-80">Specialising in <br/>Artificial Intelligence.</span>
+          <span className="italic font-serif opacity-70">Specialising in <br/>Artificial Intelligence.</span>
         </h1>
         <p className="max-w-md text-lg leading-relaxed opacity-70">
           Focused on technical expertise and critical soft skills.
