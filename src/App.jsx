@@ -39,7 +39,7 @@ const App = () => {
       >
         {`{ x: ${mousePos.x}, y: ${mousePos.y} }`}
         <br />
-        {`[ HOLA_AMIGO ]`}
+        {`[ HOLA_kAMIGO ]`}
       </div>
 
       {/* Hero*/}
@@ -135,6 +135,7 @@ const App = () => {
         <h1 className="text-5xl font-bold text-slate-950 mb-12 text-center lg:text-left">
           Skills & Proficiencies
         </h1>
+        
         
       </section>
 
