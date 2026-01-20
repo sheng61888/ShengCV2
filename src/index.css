@@ -85,9 +85,33 @@
   color: #fff;
 }
 
-h1 {
+
+.h1{
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 4rem; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #30364F;
+}
+
+.h2{
+  margin-left:30px;
+  padding: 10px;
+  font-size:2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #30364F;
 }
 
 body {
-  background-color: #F5F5F3;
+  background-color: #f2eee0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
 }
