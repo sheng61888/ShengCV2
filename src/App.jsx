@@ -1,7 +1,7 @@
 import React , { useState , useEffect } from 'react'
 import './index.css'
 import Card from './components/card'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Aurora from './components/Aurora';
 import apuLogo from './assets/images/APU-Logo_Final_Vertical_V1_HR1-copy-1024x966.png';
 import smkLogo from './assets/images/smkbbsp_logo-removebg-preview.png';
@@ -47,7 +47,6 @@ const App = () => {
         <span>SAM KIAN SHENG</span>
         <div className="space-x-10">          
           <a href="#about" className="hover:underline underline-offset-8">ABOUT</a>
-          <a href="skills" className="hover:underline underline-offset-8">SKILLS</a>
           <a href="#projects" className="hover:underline underline-offset-8">WORK</a>
         </div>
       </nav>
@@ -77,9 +76,6 @@ const App = () => {
                 <a href="#projects" className="px-8 py-3 bg-slate-950 text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                    View Work
                 </a>
-                <a href="#contact" className="px-8 py-3 border-2 border-slate-950 text-slate-950 font-semibold rounded-lg hover:bg-slate-950 hover:text-white transition-all">
-                   Contact Me
-                </a>
              </div>
 
              <div className="flex gap-6 pt-4 text-slate-950">
@@ -91,15 +87,20 @@ const App = () => {
                 <a href="https://linkedin.com/in/sam-kian-sheng-6b70a2355" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
                     <FaLinkedin className="w-8 h-8" />
                 </a>
+                <a href="mailto:samkiansheng2@gmail.com" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+                  {/* {Email Icon} */}
+                  <FaEnvelope className="w-8 h-8" />
+                  <span className="text-lg font-medium">samkiansheng2@gmail.com</span>
+                </a>
              </div>
           </div>
 
           {/* Graphical/Visual Side */}
-          <div className="relative hidden lg:block">
+          <div className="relative flex justify-center lg:block">
               {/* ID Card Visual */}
-              <div className="relative bg-white/50 backdrop-blur-lg border border-white/50 p-8 rounded-2xl shadow-xl transform rotate-5 hover:rotate-0 transition-all duration-500 flex items-center gap-6">
+              <div className="relative bg-white/50 backdrop-blur-lg border border-white/50 p-6 sm:p-8 rounded-2xl shadow-xl transform lg:rotate-5 hover:rotate-0 transition-all duration-500 flex flex-col sm:flex-row items-center gap-6 max-w-md sm:max-w-none">
                   {/* Code Snippet (Left) */}
-                  <div className="flex-1 space-y-3 font-mono text-sm">
+                  <div className="flex-1 space-y-3 font-mono text-sm w-full">
                       <div className="flex gap-2 mb-4">
                           <div className="w-3 h-3 rounded-full bg-red-400"></div>
                           <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
@@ -132,9 +133,23 @@ const App = () => {
       </section>
 
       <section id="skills" className="px-8 lg:px-20">
-        <h1 className="text-5xl font-bold text-slate-950 mb-12 text-center lg:text-left">
+        <h1 className="text-5xl font-bold text-slate-950 mt-12 mb-12 text-center lg:text-left">
           Skills & Proficiencies
         </h1>
+        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 bg-transparent">
+          <Card 
+            title="Programming Languages" 
+            description="React, Python, Java, C Sharp, C++, R, SQL, Javascript, HTML, CSS"
+          />
+          <Card
+            title="Software"
+            description="Adobe Creative Software (Photoshop, Lightroom), Microsoft Office, Google Cloud, Microsoft Azure, Cisco Networking, RedHat Administrative"
+          />
+          <Card
+            title="I can speak ..."
+            description="Fluent English and Malay, Native Chinese"
+          />
+        </div>
         
         
       </section>
