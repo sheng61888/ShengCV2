@@ -147,32 +147,7 @@ const App = () => {
             tags={['React', 'Tailwind', 'Vite']}
           />
         </div>
-      </section>
-
-      <section id="contact" className="bg-[#f2eee0] py-20">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#30364F]">Contact Me</h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-600 sm:text-xl">
-                I'm currently looking for new opportunities, and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-            </p>
-            <form action="#" className="space-y-8">
-                <div>
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-[#30364F]">Your email</label>
-                    <input type="email" id="email" className="shadow-sm bg-white border border-gray-300 text-[#30364F] text-sm rounded-lg focus:ring-[#30364F] focus:border-[#30364F] block w-full p-2.5" placeholder="name@example.com" required />
-                </div>
-                <div>
-                    <label htmlFor="subject" className="block mb-2 text-sm font-medium text-[#30364F]">Subject</label>
-                    <input type="text" id="subject" className="block p-3 w-full text-sm text-[#30364F] bg-white rounded-lg border border-gray-300 shadow-sm focus:ring-[#30364F] focus:border-[#30364F]" placeholder="Project Inquiry / Hello!" required />
-                </div>
-                <div className="sm:col-span-2">
-                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-[#30364F]">Your message</label>
-                    <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-[#30364F] bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-[#30364F] focus:border-[#30364F]" placeholder="Leave a comment..."></textarea>
-                </div>
-                <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#30364F] sm:w-fit hover:bg-opacity-90 shadow-lg transition-all">Send message</button>
-            </form>
-        </div>
-      </section>
-      
+      </section>     
     </main>
     </div>
   );
