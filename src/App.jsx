@@ -46,8 +46,8 @@ const App = () => {
       <nav className="p-10 flex justify-between items-center font-mono text-lg tracking-widest">
         <span>SAM KIAN SHENG</span>
         <div className="space-x-10">          
-          <a href="#about" className="hover:underline underline-offset-8">ABOUT</a>
-          <a href="#projects" className="hover:underline underline-offset-8">WORK</a>
+          <a href="#about" className="hover:underline underline-offset-8">About</a>
+          <a href="#projects" className="hover:underline underline-offset-8">Projects</a>
         </div>
       </nav>
 
@@ -62,7 +62,7 @@ const App = () => {
           {/* Text Content */}
           <div className="space-y-6 text-left">
              <h1 className="text-6xl lg:text-7xl font-black text-slate-950 leading-tight font-poppins">
-                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-600">Sheng.</span>
+                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-600">Sheng.</span>
              </h1>
              <h2 className="text-2xl text-slate-800 font-medium max-w-lg">
                 Computer Science Student & <br/> specializing in Artificial Intelligence.
