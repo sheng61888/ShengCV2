@@ -67,7 +67,7 @@ const App = () => {
                 Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-600">Sheng.</span>
              </h1>
              <h2 className="text-2xl text-slate-800 font-medium max-w-lg">
-                Computer Science Student & <br/> specializing in Artificial Intelligence.
+                Computer Science Student<br/>specializing in Artificial Intelligence.
              </h2>
              <p className="text-lg text-slate-800 leading-relaxed max-w-xl">
                 I am a passionate and detail-oriented individual with a strong foundation in computer science and a keen interest in software development. I enjoy solving complex problems and building collaborative solutions.
