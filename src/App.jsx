@@ -179,47 +179,47 @@ const App = () => {
           baseScale={0.9}
           useWindowScroll={true}
         >
-          <ScrollStackItem itemClassName="bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 text-white border-none">
+          <ScrollStackItem itemClassName="bg-gradient-to-br from-blue-300 via-blue-200 to-indigo-300 text-white border-none opacity-80">
             <div className="h-full flex flex-col justify-between">
               <div>
-                <span className="text-lg font-mono uppercase tracking-widest">Oct 2024</span>
-                <h2 className="text-3xl poppins-bold-white mt-2 leading-tight">BAT X APU Cyber Traditions Battle 2024</h2>
+                <span className="text-lg font-mono text-slate-950 uppercase tracking-widest">Oct 2024</span>
+                <h2 className="text-3xl poppins-bold mt-2 leading-tight text-slate-950">BAT X APU Cyber Traditions Battle 2024</h2>
               </div>
               <div className="flex justify-between items-end">
-                <div className="w-12 h-12 bg-white/20 rounded-lg backdrop-blur-sm flex items-center justify-center">
-                   <div className="w-6 h-6 border-2 border-white rounded-full"></div>
+                <div className="w-12 h-12 bg-slate-950/20 rounded-lg backdrop-blur-sm flex items-center justify-center">
+                   <div className="w-6 h-6 border-2 border-slate-950 rounded-full"></div>
                 </div>
-                <p className="text-lg font-mono">CTF Participation</p>
+                <p className="text-lg font-mono text-slate-950">CTF Participation</p>
               </div>
             </div>
           </ScrollStackItem>
 
-          <ScrollStackItem itemClassName="bg-gradient-to-br from-red-600 via-red-500 to-rose-600 text-white border-none">
+          <ScrollStackItem itemClassName="bg-gradient-to-br from-red-300 via-red-200 to-rose-300 text-white border-none opacity-80">
             <div className="h-full flex flex-col justify-between">
               <div>
-                <span className="text-lg font-mono uppercase tracking-widest">May 2025</span>
-                <h2 className="text-3xl poppins-bold-white mt-2 leading-tight">Red Hat System Administration I (RH124)</h2>
+                <span className="text-lg font-mono text-slate-950 uppercase tracking-widest">May 2025</span>
+                <h2 className="text-3xl poppins-bold mt-2 leading-tight text-slate-950">Red Hat System Administration I (RH124)</h2>
               </div>
               <div className="flex justify-between items-end">
-                <div className="w-12 h-12 bg-white/20 rounded-lg backdrop-blur-sm flex items-center justify-center font-bold">
+                <div className="w-12 h-12 bg-slate-950/20 rounded-lg backdrop-blur-sm flex items-center justify-center font-bold">
                    RH
                 </div>
-                <p className="text-lg font-mono">Infrastructure & System Management</p>
+                <p className="text-lg font-mono text-slate-950">Infrastructure & System Management</p>
               </div>
             </div>
           </ScrollStackItem>
 
-          <ScrollStackItem itemClassName="bg-gradient-to-br from-orange-400 via-yellow-500 to-amber-600 text-white border-none">
+          <ScrollStackItem itemClassName="bg-gradient-to-br from-orange-300 via-yellow-200 to-amber-300 text-white border-none opacity-80">
             <div className="h-full flex flex-col justify-between">
-              <div>
-                <span className="text-lg font-mono uppercase tracking-widest">Sep 2025</span>
-                <h2 className="text-3xl poppins-bold-white mt-2 leading-tight">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h2>
+              <div> 
+                <span className="text-lg font-mono uppercase tracking-widest text-slate-950">Sep 2025</span>
+                <h2 className="text-3xl poppins-bold mt-2 leading-tight text-slate-950">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h2>
               </div>
               <div className="flex justify-between items-end">
-                <div className="w-12 h-12 bg-white/20 rounded-lg backdrop-blur-sm flex items-center justify-center font-bold">
+                <div className="w-12 h-12 bg-slate-950/20 rounded-lg backdrop-blur-sm flex items-center justify-center font-bold">
                    OCI
                 </div>
-                <p className="text-lg font-mono">Artificial Intelligence & Cloud Foundations</p>
+                <p className="text-lg font-mono text-slate-950">Artificial Intelligence & Cloud Foundations</p>
               </div>
             </div>
           </ScrollStackItem>
