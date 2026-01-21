@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/ShengCV2',
+  base: 'ShengCV2',
   plugins: [react(), tailwindcss(),],
   resolve: {
     alias: {
