@@ -9,6 +9,13 @@
   color: #020617;
 }
 
+.font-poppins-white {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+}
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -35,6 +42,13 @@
   font-weight: 700;
   font-style: normal;
   color: #020617;
+}
+
+.poppins-bold-white {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
 }
 
 .poppins-extrabold {

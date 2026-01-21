@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ title, description, tags = [], link }) => {
+const ProjectCard = ({ title, description, tags = [], link = "#" }) => {
   return (
     <div className="group relative bg-[#ECECEC]/50 backdrop-blur-lg rounded-3xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-blue-100 flex flex-col h-full overflow-hidden">
       {/* Gradient Blob Background Effect on Hover */}
@@ -13,13 +13,13 @@ const Card = ({ title, description, tags = [], link }) => {
         </h3>
 
         {/* Description */}
-        <p className="poppins-regular text-md leading-relaxed mb-6 flex-grow">
+        <p className="poppins-regular text-md leading-relaxed mb-6 flex-grow text-slate-800">
           {description}
         </p>
 
-        {/* Tech Tags */}
-        {tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-auto">
+        {/* Footer: Tags & View Button */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mt-auto">
+          <div className="flex flex-wrap gap-2 max-w-[70%]">
             {tags.map((tag, index) => (
               <span 
                 key={index} 
@@ -29,10 +29,19 @@ const Card = ({ title, description, tags = [], link }) => {
               </span>
             ))}
           </div>
-        )}
+
+          <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-5 py-2 bg-slate-950 text-white text-sm font-bold rounded-xl hover:bg-slate-800 transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1 self-end sm:self-auto whitespace-nowrap"
+          >
+            View Project
+          </a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default ProjectCard;

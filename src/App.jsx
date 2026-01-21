@@ -6,6 +6,8 @@ import Aurora from './components/Aurora';
 import apuLogo from './assets/images/APU-Logo_Final_Vertical_V1_HR1-copy-1024x966.png';
 import smkLogo from './assets/images/smkbbsp_logo-removebg-preview.png';
 import profilePic from './assets/images/profile pic.jpg';
+import ScrollStack, { ScrollStackItem } from './components/ScrollStack'
+import ProjectCard from './components/ProjectCard';
 
 const App = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -39,7 +41,7 @@ const App = () => {
       >
         {`{ x: ${mousePos.x}, y: ${mousePos.y} }`}
         <br />
-        {`[ HOLA_kAMIGO ]`}
+        {`[ HOLA_AMIGO ]`}
       </div>
 
       {/* Hero*/}
@@ -132,26 +134,96 @@ const App = () => {
         </div>
       </section>
 
-      <section id="skills" className="px-8 lg:px-20">
-        <h1 className="text-5xl font-bold text-slate-950 mt-12 mb-12 text-center lg:text-left">
-          Skills & Proficiencies
+      <section id="projects" className="py-20 px-8 lg:px-20">
+        <h1 className="text-5xl font-bold text-slate-950 mb-12 text-center lg:text-left">
+          Featured Projects
         </h1>
-        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 bg-transparent">
-          <Card 
-            title="Programming Languages" 
-            description="React, Python, Java, C Sharp, C++, R, SQL, Javascript, HTML, CSS"
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-transparent">
+          <ProjectCard 
+            title="KiraKira Mathematics Learning Website" 
+            description="An engaging gamified learning platform designed for SPM students. Includes progress tracking dashboards, multi-user management, and interactive quizzes."
+            tags={['C#', '.NET', 'Web Application', 'MySQL']}
+            link="https://github.com/sheng61888/KiraKira5"
           />
-          <Card
-            title="Software"
-            description="Adobe Creative Software (Photoshop, Lightroom), Microsoft Office, Google Cloud, Microsoft Azure, Cisco Networking, RedHat Administrative"
+          <ProjectCard 
+            title="Lumi's Adventure - Platformer Game" 
+            description="A 2D platformer game built with Pygame. Features smooth character movement, enemy AI, and multiple levels. Apply special effects such as parallax background, screen shake, and particle effects."
+            tags={['Pygame', 'Python', '2D Game']}
+            link="https://github.com/sheng61888/lumi-s_adventure"
           />
-          <Card
-            title="I can speak ..."
-            description="Fluent English and Malay, Native Chinese"
+          <ProjectCard 
+            title="Automated Purchase Order System" 
+            description="A comprehensive system for managing purchase requisitions. Features role-based dashboards, automated approval workflows, and real-time inventory updates using file handling."
+            tags={['Java Swing', 'OOP', 'File I/0']}
+            link=" "
           />
+          <ProjectCard 
+            title="CarCare Management System" 
+            description="An enterprise-grade desktop solution built with C# to streamline workshop workflows. It features a robust database for automated billing, service history tracking, and intelligent inventory management across four distinct user roles."
+            tags={['C#', 'SQL', 'Desktop Application']}
+            link=""
+          />
+          
         </div>
-        
-        
+      </section> 
+
+      {/* <Certifications> */}
+      <section id="certifications" className="py-20">
+        <h1 className="text-5xl font-bold text-slate-950 mb-12 text-center lg:text-left ml-8 lg:ml-20">
+          Certifications
+        </h1>
+        <ScrollStack
+          itemDistance={50}
+          itemStackDistance={20}
+          baseScale={0.9}
+          useWindowScroll={true}
+        >
+          <ScrollStackItem itemClassName="bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 text-white border-none">
+            <div className="h-full flex flex-col justify-between">
+              <div>
+                <span className="text-lg font-mono uppercase tracking-widest">Oct 2024</span>
+                <h2 className="text-3xl poppins-bold-white mt-2 leading-tight">BAT X APU Cyber Traditions Battle 2024</h2>
+              </div>
+              <div className="flex justify-between items-end">
+                <div className="w-12 h-12 bg-white/20 rounded-lg backdrop-blur-sm flex items-center justify-center">
+                   <div className="w-6 h-6 border-2 border-white rounded-full"></div>
+                </div>
+                <p className="text-lg font-mono">CTF Participation</p>
+              </div>
+            </div>
+          </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="bg-gradient-to-br from-red-600 via-red-500 to-rose-600 text-white border-none">
+            <div className="h-full flex flex-col justify-between">
+              <div>
+                <span className="text-lg font-mono uppercase tracking-widest">May 2025</span>
+                <h2 className="text-3xl poppins-bold-white mt-2 leading-tight">Red Hat System Administration I (RH124)</h2>
+              </div>
+              <div className="flex justify-between items-end">
+                <div className="w-12 h-12 bg-white/20 rounded-lg backdrop-blur-sm flex items-center justify-center font-bold">
+                   RH
+                </div>
+                <p className="text-lg font-mono">Infrastructure & System Management</p>
+              </div>
+            </div>
+          </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="bg-gradient-to-br from-orange-400 via-yellow-500 to-amber-600 text-white border-none">
+            <div className="h-full flex flex-col justify-between">
+              <div>
+                <span className="text-lg font-mono uppercase tracking-widest">Sep 2025</span>
+                <h2 className="text-3xl poppins-bold-white mt-2 leading-tight">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h2>
+              </div>
+              <div className="flex justify-between items-end">
+                <div className="w-12 h-12 bg-white/20 rounded-lg backdrop-blur-sm flex items-center justify-center font-bold">
+                   OCI
+                </div>
+                <p className="text-lg font-mono">Artificial Intelligence & Cloud Foundations</p>
+              </div>
+            </div>
+          </ScrollStackItem>
+        </ScrollStack>
       </section>
 
       <section id="education" className="px-8 lg:px-20">
@@ -204,31 +276,75 @@ const App = () => {
                  </div>
             </div>
         </div>
-      </section>
+      </section>  
 
-      <section id="projects" className="py-20 px-8 lg:px-20">
-        <h1 className="text-5xl font-bold text-slate-950 mb-12 text-center lg:text-left">
-          Featured Projects
+      
+      <section id="work-experience" className="py-20 px-8 lg:px-20">
+        <h1 className="text-5xl font-bold text-slate-950 mb-16 text-center lg:text-left">
+          Work Experience
         </h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-transparent">
+        <div className="relative border-l-4 border-slate-950/20 ml-4 lg:ml-10 space-y-12 pb-8">
+          {/* Stopover */}
+          <div className="relative pl-10">
+            <div className="absolute -left-[14px] top-0 w-6 h-6 bg-slate-950 rounded-full border-4 border-[#f2eee0]"></div>
+            <div className="bg-white/40 backdrop-blur-md border border-white/50 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-2xl font-black text-slate-950">Part-Time Barista-Cook</h3>
+                  <p className="text-xl font-medium text-slate-800">Stopover</p>
+                </div>
+                <span className="px-4 py-1 bg-slate-950 text-white text-sm font-mono rounded-full self-start">
+                  Sep 2023 – Jan 2024
+                </span>
+              </div>
+              <p className="text-lg text-slate-800 leading-relaxed">
+                Developed teamwork and communication skills while serving customers, preparing food and beverages, and ensuring quality standards.
+              </p>
+            </div>
+          </div>
+
+          {/* O & G Transport */}
+          <div className="relative pl-10">
+            <div className="absolute -left-[14px] top-0 w-6 h-6 bg-slate-950 rounded-full border-4 border-[#f2eee0]"></div>
+            <div className="bg-white/40 backdrop-blur-md border border-white/50 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-2xl font-black text-slate-950">Part-Time Clerk</h3>
+                  <p className="text-xl font-medium text-slate-800">O & G Transport (KL) Sdn Bhd</p>
+                </div>
+                <span className="px-4 py-1 bg-slate-950 text-white text-sm font-mono rounded-full self-start">
+                  Jan 2025 – Feb 2025
+                </span>
+              </div>
+              <p className="text-lg text-slate-800 leading-relaxed">
+                Strengthened organizational and attention-to-detail skills by managing invoices and performing accurate data entry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="px-8 lg:px-20">
+        <h1 className="text-5xl font-bold text-slate-950 mt-12 mb-12 text-center lg:text-left">
+          Skills & Proficiencies
+        </h1>
+        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 bg-transparent">
           <Card 
-            title="Automated Purchase Order System" 
-            description="A comprehensive system for managing purchase requisitions. Features role-based dashboards, automated approval workflows, and real-time inventory updates using file handling."
-            tags={['Java Swing', 'OOP', 'File I/0']}
+            title="Programming Languages" 
+            description="React, Python, Java, C Sharp, C++, R, SQL, Javascript, HTML, CSS"
           />
-          <Card 
-            title="KiraKira Learning App" 
-            description="An engaging gamified learning platform designed for SPM students. Includes progress tracking dashboards, multi-user management, and interactive quizzes."
-            tags={['C#', '.NET', 'Web Application', 'MySQL']}
+          <Card
+            title="Software"
+            description="Adobe Creative Software (Photoshop, Lightroom), Microsoft Office, Google Cloud, Microsoft Azure, Cisco Networking, RedHat Administrative"
           />
-          <Card 
-            title="Portfolio Website" 
-            description="My personal digital garden. Built to showcase my skills and projects with a premium, responsive design and smooth animations."
-            tags={['React', 'Tailwind', 'Vite']}
+          <Card
+            title="I can speak ..."
+            description="Fluent English and Malay, Native Chinese"
           />
         </div>
-      </section>     
+      </section>
+
     </main>
     </div>
   );
