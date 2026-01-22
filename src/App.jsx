@@ -74,11 +74,11 @@ const App = () => {
              </p>
              
              {/* Buttons & Socials */}
-             <div className="flex flex-wrap gap-4 pt-4">
+             {/* <div className="flex flex-wrap gap-4 pt-4">
                 <a href="#projects" className="px-8 py-3 bg-slate-950 text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                    View Work
                 </a>
-             </div>
+             </div> */}
 
              <div className="flex gap-6 pt-4 text-slate-950">
                 {/* GitHub Icon */}
