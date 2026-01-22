@@ -158,13 +158,6 @@ const App = () => {
             tags={['Java Swing', 'OOP', 'File I/0']}
             link=" "
           />
-          <ProjectCard 
-            title="CarCare Management System" 
-            description="An enterprise-grade desktop solution built with C# to streamline workshop workflows. It features a robust database for automated billing, service history tracking, and intelligent inventory management across four distinct user roles."
-            tags={['C#', 'SQL', 'Desktop Application']}
-            link=" "
-          />
-          
         </div>
       </section> 
 
